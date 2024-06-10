@@ -20,6 +20,8 @@ eimage_ppcat = pg.image.load('assets/images/enemies/ppcat.png').convert_alpha()
 def draw_background():
     screen.fill(con.BACKGROUND_COLOR)
 
+
+# draws path on screen
 def draw_path():
     for (col, row) in con.PATH:
         rect = pg.Rect(col * con.CELL_SIZE, row * con.CELL_SIZE, con.CELL_SIZE, con.CELL_SIZE)
